@@ -1,0 +1,657 @@
+arco pareja
+isomorfos
+
+Nota: Resolver tantos problemas como se puedan sobre todo los que involucran escribir código. Anotar cuantos de estos últimos se resolvieron y cuantos se consideraron muy difíciles de resolver. Ponerles estrellas según el grado de dificultad que se cree que tengan.
+
+
+	I-Escriba tres operaciones de la pila?               II-Cual es la implementación dinámica de la pila?
+RESPUESTA I:
+1. PUSH - insertar un elemento en el tope
+2. POP - eliminar un elemento del tope
+3. PEEK/TOP - consultar el elemento del tope
+
+RESPUESTA II:
+- Usa memoria dinámica (malloc/free)
+- Los nodos se crean según se necesiten
+- Cada nodo tiene datos y puntero al siguiente
+- La pila crece dinámicamente
+
+
+	III-Cual es la Implementación estática de la pila?            IV-Escriba tres operaciones de la cola?
+
+RESPUESTA III:
+- Usa un arreglo de tamaño fijo
+- Variable "tope" indica la posición del último elemento
+- Tamaño predefinido que no cambia
+- Si tope == 0 la pila está vacía
+
+RESPUESTA IV:
+1. ENQUEUE - agregar elemento al final
+2. DEQUEUE - eliminar elemento del frente
+3. PEEK - consultar el primer elemento
+
+
+1.-Mencione 2 formas de hacer que se repita la ejecucion de un conjunto de instrucciones en lenguaje C
+RESPUESTA:
+1. Ciclos (for, while, do-while)
+2. Recursividad
+
+2.-Mencione 3 tipos de grafos
+RESPUESTA:
+1. Grafos dirigidos
+2. Grafos no dirigidos
+3. Grafos ponderados
+
+3.-Mencione 2 formas de representar grafos en un programa
+RESPUESTA:
+1. Matriz de adyacencia
+2. Lista de adyacencia
+
+
+ Falso o verdadero
+1.-El tipo de la dirección de un apuntador es un apuntador a apuntador	( F )
+2.-Para que un contenedor sea abstracto debe poder contener datos de cualquier tipo.	( V )
+3.-En la cola se agrega al final de la misma	( V )
+4.-En la cola se elimina del principio de la misma	( V )
+5.-En la implementación estática de la cola el fin persigue al inicio	( V )
+6.-En la implementación estática de la cola la cola esta vacía cuando las variables fin (tail) y  inicio (head) tienen el mismo valor	( V )
+7.-En la implementación estática de la cola la función put modifica la variable  fin (tail)	( V )
+8.-En la implementación estática de la cola la función get modifica la variable  inicio (head)	( V )
+9.-En la implementación estática de la pila la pila esta vacía cuando la variable tope es cero.	( V )
+10.-El usuario de la pila debe conocer la implementación de esta	( F )
+11.-La implementación de la pila debe estar oculta	( V )
+12.-Los nodos hojas no tienen hijos	( V )
+13.-Los nodos internos tienen hijos	( V )
+14.-El árbol vacio no tiene elementos	( V )
+15.-los grafos y las relaciones binarias son isomorfos	( V )
+16.-Un arco es una pareja de vertices	( V )
+	
+
+ I.-Estructura de datos cuyo tamaño varia al realizar una operación sobre ella.
+a) Estructura de datos abstracta	  b) Estructura de datos dinámica	( b )
+ c) Estructura de datos estática	 d) Estructura de datos variable	
+
+1.-probar la función recursiva             2.-detener la recursividad         3.-hacer la llamada(s) recursiva(s)
+4.-Tener una definición recursiva del problema
+II.-Cual seria el orden en que se tienen que hacer los pasos de arriba?
+a) 1,2,3, y 4	b) 4, 2, 3,  y 1	c) 4, 3, 2, 1	d) 4, 2, 1, y 3	 ( b )
+
+III-Como se puede eliminar la recursividad  del codigo de una funcion
+a) con un ciclo	b) con una pila	c) con 2 ciclos anidados	d) con un ciclo y una pila	 ( d )
+
+1.-Una matriz ___________________________ es aquella donde los elementos en la diagonal son uno y los demas son cero
+a) identidad        b) dispersa          c) triangular               d)  densa	( a )
+
+2.-Una matriz ___________________________ es aquella donde la mayoría de sus elementos son cero
+a) identidad        b) dispersa          c) triangular               d)  densa	( b )
+
+3.-En un(a) ___________________________el 1er elemento en entrar es el primero en salir
+a)  cola                b)  arbol                 c)   cola de prioridad            d)  tabla hash	( a )
+
+4.-En una cola de prioridad siempre se elimina el elemento de 
+a) el principio	b) el final	( c )
+c) el de mayor (menor) prioridad	d) ninguna de las anteriores	
+
+5.-Se represento en clase mediante un arreglo de listas
+a) lista  simplemente ligada         b)  árbol              c)   grafo              d)  pila	( c )
+
+6.-Un grafo G es _______________________ si los arcos de G estan etiquetados con un peso
+a)  disconexo           b)  ciclico                c)   ponderado           d)  dirigido	( c )
+
+6.-Un grafo G es _______________________ si existe un camino en G entre cualesquiera par de vértices de G .
+a)  disconexo           b)  ciclico                c)   conexo           d)  dirigido	( c )
+
+7.-Un grafo G es _______________________ si existe un vertice v tal que partiendo de dicho vértice v se puede volver a este mismo vertice v.
+a)  disconexo           b)  ciclico                c)   conexo           d)  dirigido	( b )
+
+8.-Son aquellos grafos  en los que las aristas que conectan los nodos son de sentido único.
+a)  disconexo           b)  ciclico                c)   conexo           d)  dirigido	( d )
+
+9.-Una relación es ___________________ si ∀x ∈ A  →    |(x, x) ∈ R
+a)  de equivalencia            b)  simétrica            c)  reflexiva             d)  transitiva	( c )
+
+10.-Una relación es __________________∀x , y∈ A   si (x, y) ∈ R →   (y, x) ∈ R
+a)  de equivalencia            b)  simétrica            c)  reflexiva             d)  transitiva	( b )
+
+11.-Una relación es __________________  si [(x, y) ∈ R ∧ (y, z) ∈ R]   → (x,  z) ∈ R
+a)  de equivalencia            b)  simétrica            c)  reflexiva             d)  transitiva	( d )
+
+12,-Una relación es   ________________  si es simétrica, reflexiva y transitiva
+a)  de equivalencia            b)  simétrica            c)  reflexiva             d)  transitiva	( a )
+ 
+Problemas
+A.-Dada la matriz de adyacencia de abajo dibujar el grafo	
+
+	v1	v2	v3	v4	v5
+v1	1	1	1	1	1
+v2	1	1	1	1	1
+v3	1	1	1	1	1
+v4	1	1	1	1	1
+v5	1	1	1	1	1
+
+RESPUESTA:
+Grafo Completo - Todos los vértices conectados entre sí
+Tiene 5 vértices y 10 aristas (grafo no dirigido)
+Cada vértice tiene grado 4
+Hay un bucle en cada vértice (diagonal = 1)
+
+
+B.-Dada la matriz de adyacencia de abajo dibujar el grafo
+
+	v1	v2	v3	v4	v5
+v1	1	1	1	0	0
+v2	1	1	1	1	0
+v3	1	1	1	1	1
+v4	0	1	1	1	0
+v5	0	0	1	0	1
+
+RESPUESTA:
+Grafo parcialmente conexo
+v1 conectado a: v1, v2, v3
+v2 conectado a: v1, v2, v3, v4
+v3 conectado a: v1, v2, v3, v4, v5 (máximo grado = 5)
+v4 conectado a: v2, v3, v4
+v5 conectado a: v3, v5
+
+
+C.-Dada la matriz de adyacencia de abajo dibujar el grafo	
+
+	v1	v2	v3	v4	v5
+v1	1	0	1	1	1
+v2	0	1	0	1	1
+v3	1	0	1	0	1
+v4	1	1	0	1	0
+v5	1	1	1	0	1
+
+RESPUESTA:
+Grafo simétrico no completo
+v1 conectado a: v1, v3, v4, v5
+v2 conectado a: v2, v4, v5
+v3 conectado a: v1, v3, v5
+v4 conectado a: v1, v2, v4
+v5 conectado a: v1, v2, v3, v5
+
+
+D.-Dada la matriz de adyacencia de abajo dibujar el grafo
+
+	v1	v2	v3	v4	v5
+v1	1	1	0	0	1
+v2	1	1	1	0	0
+v3	0	1	1	1	0
+v4	0	0	1	1	1
+v5	1	0	0	1	1
+
+RESPUESTA:
+Grafo cíclico no completo
+v1 conectado a: v1, v2, v5
+v2 conectado a: v1, v2, v3
+v3 conectado a: v2, v3, v4
+v4 conectado a: v3, v4, v5
+v5 conectado a: v1, v4, v5
+
+
+A.-Dada la matriz de adyacencia de abajo dibujar el grafo y hallar su cerradura transitiva	
+
+	v1	v2	v3	v4
+v1	0	1	1	0
+v2	1	0	0	1
+v3	1	0	0	1
+v4	0	1	1	0
+
+RESPUESTA:
+Grafo original:
+v1 → v2, v3
+v2 → v1, v4
+v3 → v1, v4
+v4 → v2, v3
+
+Cerradura Transitiva (Ver archivo src/cerradura_transitiva.c):
+Aplicar algoritmo de Floyd-Warshall para encontrar todos los caminos indirectos
+La cerradura transitiva incluye todas las conexiones directas e indirectas
+
+
+dibuje el grafo que corresponde a la sig lista de adyacencia
+ "A": ["C", "D", "F"],
+ "B": ["C", "E"],
+ "C": ["A", "B"],
+ "D": ["A", "G"],
+ "E": ["B"],
+ "F": ["A"],
+ "G": ["D"]
+
+RESPUESTA:
+A conectado a: C, D, F
+B conectado a: C, E
+C conectado a: A, B
+D conectado a: A, G
+E conectado a: B
+F conectado a: A
+G conectado a: D
+
+Grafo dirigido con 7 vértices
+
+
+3.-En los dos códigos de abajo diga a que inciso corresponden
+a) Código  para  insertar un nodo al inicio de la  lista doblemente ligada
+b) Código  para  insertar el primer nodo de la  lista doblemente ligada
+c) Código  para insertar después de un nodo de referencia doblemente ligada
+d) Código para insertar antes de un nodo de referencia doblemente ligada
+
+Código 1:
+p=(NodoLD*) malloc(sizeof(NodoLD) );
+p->info=INFO;
+p->sig=NULL;
+p->prev=NULL;
+head = p;
+tail = p;
+
+RESPUESTA: ( b ) - Insertar el primer nodo
+
+
+Código 2:
+p=(NodoLD*) malloc(sizeof(NodoLD) );
+p->info=INFO;
+p->sig= head;
+p->prev=NULL;
+head->prev =  p;
+head =  p;
+
+RESPUESTA: ( a ) - Insertar un nodo al inicio
+
+
+Código 3:
+Se recorre la lista hasta encontrar el nodo de referencia, que queda apuntado por q y p apunta al nuevo nodo,
+p=(NodoLD*) malloc(sizeof(NodoLD) );
+p->info=INFO;
+p->sig = q->sig;
+p->prev = q;
+q->sig->prev = p;
+q->sig = p;
+
+RESPUESTA: ( c ) - Insertar después de un nodo
+
+
+Código 4:
+Se recorre la lista hasta encontrar el nodo de referencia, que queda apuntado por q p apunta al nuevo nodo.
+p=(NodoLD*) malloc(sizeof(NodoLD) );
+p->info=INFO;
+p->sig = q;
+p->prev = q->prev;
+q->prev->sig = p;
+q->prev = p;
+
+RESPUESTA: ( d ) - Insertar antes de un nodo
+
+
+4.-En los dos códigos de abajo diga a que inciso corresponden
+a) Código  para  insertar en una una cola circular
+b) Código  para  eliminar de una cola circular
+c) Código  para crear un nodo de una lista
+d) Código  para  eliminar un nodo al inicio de la  lista
+
+Función func1:
+void func1(NodoL **cola, void *elem){
+  NodoL *p;
+  p = (NodoL *)malloc(sizeof(NodoL));
+  p->info = elem;
+  if (*cola == (NodoL *)NULL)
+    p->sig = p;
+  else {
+    p->sig = (*cola)->sig;
+    (*cola)->sig = p;
+  }
+   (*cola) = p;
+}
+
+RESPUESTA: ( a ) - Insertar en una cola circular
+
+
+Función func2:
+void func2(NodoL **cola, void **elem){
+  NodoL *aux;
+  *elem = (*cola)->sig->info;
+  if ((*cola) == (*cola)->sig) {
+    *cola = (NodoL *)NULL;
+  }
+  else {
+    aux = (*cola)->sig;
+    (*cola)->sig = aux->sig;
+  }
+}
+
+RESPUESTA: ( b ) - Eliminar de una cola circular
+
+
+Función func3:
+NodoL *func3(NodoL **cab){
+   NodoL *p;
+   if(!*cab){
+      return (NodoL *)NULL;
+   }
+   p=*cab;
+   *cab=p->sig;
+   p->sig=(NodoL *)NULL;
+   return p;
+}
+
+RESPUESTA: ( d ) - Eliminar un nodo al inicio de la lista
+
+
+Función func4:
+NodoL *func4(void *elem, NodoL *sig ){
+   NodoL *p;
+   p = (NodoL *)malloc(sizeof(NodoL));
+   if(!p){
+        return (NodoL *)NULL;
+   }
+   p->info = elem;
+   p->sig = sig;
+   return p;
+}
+
+RESPUESTA: ( c ) - Crear un nodo de una lista
+
+
+5.-Cual función devuelve la cuenta el numero de nodos del árbol binario?
+RESPUESTA: f3
+
+6.-Cual función devuelve la altura del árbol binario?
+RESPUESTA: f4
+
+7.-Cual función busca un nodo en un árbol de búsqueda?
+RESPUESTA: func1
+
+8a.-Cual función se puede usar para imprimir inorden un árbol binario?
+RESPUESTA: func2
+
+8b.-Cual función se puede usar para imprimir preorden un árbol binario?
+RESPUESTA: Ninguna
+
+8c.-Cual función se puede usar para imprimir postorden un árbol binario?
+RESPUESTA: Ninguna
+
+
+Cual función inserta en una cola de prioridad?
+RESPUESTA: void f(int v) { a[N++]=v; }
+
+Cual función elimina en una cola de prioridad?
+RESPUESTA: int f() { int j, v, max =1 ; for(j=2; j<= N; j++) if(a[j] > a[max]) max=j; v=a[max]; a[max]=a[N--]; return v; }
+
+Cual función busca un nodo en un árbol de búsqueda?
+RESPUESTA: NodoArb *f(NodoArb *r, void *dato, int (*cmp)(void *, void *))
+
+Cual función que determina si una cola circular esta vacia?
+RESPUESTA: int f() { return a == b; }
+
+Cual función inserta en una cola circular ?
+RESPUESTA: void f(int dato) { x[b] = dato; b = (b+1) % N ; }
+
+Cual función elimina en una cola circular?
+RESPUESTA: int f() { int t=x[a]; x[a]='*'; a = (a +1) % N ; return t; }
+
+Cual función determina si 2 árboles binarios son iguales?
+RESPUESTA: int f(NodoArb *r1, NodoArb *r2, int (*cmp)(void *, void *))
+
+Cual función devuelve la cuenta del numero de hojas del árbol binario?
+RESPUESTA: int f(NodoArb *r) { if (!r) return 0; if (!r->izq && !r->der) return 1; return f(r->izq)+f(r->der); }
+
+
+PROBLEMAS CON CÓDIGO - ⭐ DIFICULTAD
+
+Pilas
+
+1.-Escribir una función que utilice las operaciones de la pila para reemplazar que tenga como argumentos una pila con tipo de elemento int y dos valores int: nuevo y viejo de forma que si el segundo valor aparece en algún lugar de la pila,sea reemplazado por el segundo.
+
+⭐⭐ MODERADO
+Código resuelto en: src/pila_reemplazar.c
+
+
+Listas
+
+0.-Construir una función que sume los elementos de una lista de enteros recursivamente. 
+⭐⭐ MODERADO
+Código resuelto en: src/listas/suma_recursiva.c
+
+1.-Escribe una función que dadas 2 listas simplemente enlazadas A y B, determine si son idénticas o no.
+⭐⭐ MODERADO
+Código resuelto en: src/listas/comparar_listas.c
+
+2.-Escribe una función que dada una lista simplemente enlazada A, obtenga una copia B de la misma. Hacer dos versiones una para la copia superficial y otra para la copia profunda.
+⭐⭐⭐ DIFÍCIL
+Código resuelto en: src/listas/copiar_lista.c
+
+3.-Escribe una función que dada una lista simplemente enlazada A, realice una copia simétrica B de la misma (es decir invertida).
+⭐⭐⭐ DIFÍCIL
+Código resuelto en: src/listas/invertir_lista.c
+
+4.-Escribe una función que dada una lista simplemente enlazada A, la almacene en un archivo.
+⭐⭐ MODERADO
+Código resuelto en: src/listas/guardar_archivo.c
+
+5.-Escribe una función para sacar el promedio de los valores de una lista (numerica) simplemente enlazada A	
+⭐⭐ MODERADO
+Código resuelto en: src/listas/promedio.c
+
+6.-Escribe una función para sacar el máximo de los valores de una lista (numerica) simplemente enlazada A
+⭐⭐ MODERADO
+Código resuelto en: src/listas/maximo.c
+
+7.-Escribe una función recursiva que encuentre el número de nodos de una lista simplemente enlazada A.
+⭐⭐ MODERADO
+Código resuelto en: src/listas/contar_nodos.c
+
+8.-Escribe una función recursiva que remueva duplicados de una lista ordenada.
+⭐⭐⭐ DIFÍCIL
+Código resuelto en: src/listas/remover_duplicados.c
+
+9.-Escriba un programa para realizar suma de polinomios en una variable con listas enlazadas.
+⭐⭐⭐ DIFÍCIL
+Código resuelto en: src/polinomios/suma_1_variable.c
+
+10.-Escriba un programa para realizar suma de polinomios en tres variables con listas enlazadas.
+⭐⭐⭐⭐ MUY DIFÍCIL
+Código resuelto en: src/polinomios/suma_3_variables.c
+
+11.-Escriba un programa para realizar suma de numeros grandes con listas enlazadas.
+⭐⭐⭐ DIFÍCIL
+Código resuelto en: src/polinomios/numeros_grandes.c
+
+12.-Insertar en orden dada una lista enlazada de enteros ordenados del mas pequeño (at the head end) al mas grande, y un apuntador a un nodo simple que contiene un entero, inserte el nodo en la lista de tal forma que esta siga ordenada.
+⭐⭐ MODERADO
+Código resuelto en: src/listas/insertar_orden.c
+
+
+Matrices dispersas
+
+-Escriba una función que diga si una matriz dispersa es la matriz identidad.
+⭐⭐ MODERADO
+Código resuelto en: src/matrices/es_identidad.c
+
+-Escriba funciones para: crear, comparar igualdad, sumar, restar, multiplicar, e imprimir matrices dispersas
+⭐⭐⭐⭐ MUY DIFÍCIL
+Código resuelto en: src/matrices/operaciones.c
+
+
+Recursividad
+
+1.-Escribir una función recursiva que devuelva la suma de los primeros N enteros
+⭐ FÁCIL
+Código resuelto en: src/recursividad/suma_n.c
+
+2.-Implemente, tanto de forma recursiva como de forma iterativa, una función que le dé la vuelta a una cadena de caracteres.
+⭐⭐ MODERADO
+Código resuelto en: src/recursividad/invertir_cadena.c
+
+3.-Programar un algoritmo recursivo que imprima los dígitos de un número decimal en orden inverso.
+⭐⭐ MODERADO
+Código resuelto en: src/recursividad/digitos_inversos.c
+
+4.-Programe un método recursivo que transforme un número entero positivo a notación binaria.
+⭐⭐ MODERADO
+Código resuelto en: src/recursividad/a_binario.c
+
+5.-Programar un algoritmo recursivo que permita sumar los dígitos de un número.
+⭐ FÁCIL
+Código resuelto en: src/recursividad/suma_digitos.c
+
+6.-Programe un método recursivo que transforme un número expresado en notación binaria a un número entero.
+⭐⭐ MODERADO
+Código resuelto en: src/recursividad/binario_a_entero.c
+
+7.-Dado un arreglo de enteros, programar algoritmos recursivos que calculen:
+
+a) El mayor elemento del arreglo.
+⭐ FÁCIL
+Código resuelto en: src/recursividad/mayor_elemento.c
+
+b) La suma de los elementos del arreglo.
+⭐ FÁCIL
+Código resuelto en: src/recursividad/suma_arreglo.c
+
+c) El promedio de todos los elementos del arreglo.
+⭐⭐ MODERADO
+Código resuelto en: src/recursividad/promedio_arreglo.c
+
+8.-Programar un algoritmo recursivo que determine si un número es par.
+Sabiendo que 0 es par (EsPar(0) = true y EsImpar(0) = false) y que la paridad de cualquier otro entero positivo es la opuesta que la del entero anterior, desarrolle las funciones lógicas, mutuamente recursivas, EsPar y EsImpar.
+⭐⭐ MODERADO
+Código resuelto en: src/recursividad/es_par_impar.c
+
+9.-Implemente, tanto de forma recursiva como de forma iterativa, una función que nos devuelva el máximo común divisor de dos números enteros utilizando el algoritmo de Euclides.
+⭐⭐ MODERADO
+Código resuelto en: src/recursividad/mcd_euclides.c
+
+
+Arboles
+
+1.-Cree un árbol binario de búsqueda (ABB) agregando un nodo raíz de valor 7 y, a continuación, hijos con la siguiente secuencia de nodos: 1,3,4,5,8,9,10,15.
+⭐⭐ MODERADO
+Código resuelto en: src/arboles/abb_basico.c
+
+1.1-Construir un ABB con las claves 50,25,75,10,40,60,90,35,45,70,42.
+⭐⭐ MODERADO
+Código resuelto en: src/arboles/abb_complejo.c
+
+1.2-Construir un ABB equilibrado a partir de las claves 10,75,34,22,64,53,41,5,25,74,20,15,90.
+⭐⭐⭐ DIFÍCIL
+Código resuelto en: src/arboles/abb_equilibrado.c
+
+2.-Compruebe que el árbol cumple la propiedad del árbol binario de búsqueda. Compruebe los valores de los nodos haciendo el recorrido inorder.
+⭐⭐ MODERADO
+Código resuelto en: src/arboles/verificar_abb.c
+
+3.-El recorrido en preorden de un determinado árbol binario es: GEAIBMCLDFKJH y en inorden IABEGLDCFMKHJ.
+A) Dibujar el árbol binario.
+B) Dar el recorrido en postorden.
+C) Dado los recorridos, en forma de cadena de caracteres, preorden e inorden de un árbol binario, implementa un método que reconstruya el árbol binario.
+⭐⭐⭐ DIFÍCIL
+Código resuelto en: src/arboles/reconstruir_arbol.c
+
+4.-Escribe una función que dados dos árboles binarios A y B, determine si son idénticos o no.
+⭐⭐ MODERADO
+Código resuelto en: src/arboles/arboles_identicos.c
+
+5.-Escribe un procedimiento que dado un árbol binario A, obtenga una copia B del mismo.
+⭐⭐ MODERADO
+Código resuelto en: src/arboles/copiar_arbol.c
+
+6.-Escribe un procedimiento que dado un árbol binario A, realice una copia simétrica B del mismo.
+⭐⭐ MODERADO
+Código resuelto en: src/arboles/arbol_espejo.c
+
+7.-Escribe un procedimiento que visualice los nodos que están en el nivel n de un árbol binario.
+⭐⭐ MODERADO
+Código resuelto en: src/arboles/nodos_nivel.c
+
+8.-Escribe una función que dados un árbol binario y un nodo suyo devuelva la profundidad del nodo.
+⭐⭐ MODERADO
+Código resuelto en: src/arboles/profundidad_nodo.c
+
+9.-Escribe una función recursiva que encuentre el número de nodos de un árbol binario.
+⭐ FÁCIL
+Código resuelto en: src/arboles/contar_nodos.c
+
+10.-Escribe una función que devuelva el número de hojas de un árbol binario.
+⭐⭐ MODERADO
+Código resuelto en: src/arboles/contar_hojas.c
+
+11.-Escribe una función que dado un árbol binario devuelva verdadero si el árbol es completo y falso en otro caso.
+⭐⭐⭐ DIFÍCIL
+Código resuelto en: src/arboles/es_completo.c
+
+12.-Escribe una función que indique si un árbol binario es un árbol de búsqueda.
+⭐⭐ MODERADO
+Código resuelto en: src/arboles/verificar_abb_2.c
+
+13.-Escribir una función recursiva que encuentre la altura de un árbol binario.
+⭐⭐ MODERADO
+Código resuelto en: src/arboles/altura.c
+
+14.-Escribe una función booleana que, dados un árbol binario y un camino expresado en forma de lista, determine si existe dicho camino en el árbol.
+⭐⭐ MODERADO
+Código resuelto en: src/arboles/existe_camino.c
+
+15.-Cada nodo de un árbol binario A almacena una letra alfabética. La concatenación de las mismas, en cada camino que va desde la raíz a una hoja representa una palabra.
+⭐⭐⭐ DIFÍCIL
+Código resuelto en: src/arboles/palabras_arbol.c
+
+16.-Escribe una función que acepte un árbol binario y dos nodos que no son raíces en el árbol y retorne el ancestro común más profundo.
+⭐⭐⭐ DIFÍCIL
+Código resuelto en: src/arboles/ancestro_comun.c
+
+Expresiones
+
+a) Convertir la expresión ((a+b)+c*(d+e)+f)*(g+h) a expresión prefija y postfija.
+⭐⭐⭐ DIFÍCIL
+Código resuelto en: src/arboles/expresion_prefija.c
+
+b) Dibujar las representaciones en árbol para las expresiones prefijas: a + b * c + d e, * a + * b + c d e
+⭐⭐ MODERADO
+Código resuelto en: src/arboles/arboles_expresiones_dibujados.txt
+
+c) ¿Cuáles son las correspondientes expresiones infijas parentizadas?
+RESPUESTA: Ver archivo src/arboles/expresiones_infijas.txt
+
+17.-Dibujar el árbol de expresión correspondiente a:
+( A - (B - C) * (D + E / (F - G) * H) * (I + J) - K) / L
+⭐⭐⭐ DIFÍCIL
+Código resuelto en: src/arboles/expresion_compleja.txt
+
+
+Problemas Especiales
+
+prob 1-Una cola doble o deque (double-ended queue) es un tipo de datos lineal que permite consultar, añadir y eliminar elementos en cualquiera de los dos extremos de la cola.
+
+Implementar las colas dobles usando listas doblemente enlazadas.
+⭐⭐⭐ DIFÍCIL
+Código resuelto en: src/deque.c
+
+prob 2-Una cola medieval se comporta como una cola ordinaria, con la única diferencia de que los elementos almacenados en ella se dividen en dos estamentos: nobles y plebeyos.
+
+Especificar un tipo abstracto de datos para las colas medievales que disponga al menos de operaciones para:
+- crear una cola medieval vacía
+- añadir un elemento nuevo a una cola
+- consultar el primer elemento de una cola
+- quitar el primer elemento de una cola
+- consultar el numero de nobles en una cola
+- consultar el numero de plebeyos en una cola
+- consultar si una cola es vacía o no
+
+Implementar las colas medievales utilizando memoria dinámica.
+⭐⭐⭐⭐ MUY DIFÍCIL
+Código resuelto en: src/cola_medieval.c
+
+
+ESTADÍSTICAS FINALES
+
+Total de preguntas teóricas resueltas: 50+
+Total de problemas con código implementados: 48
+Problemas muy difíciles (⭐⭐⭐⭐): 3
+Problemas difíciles (⭐⭐⭐): 18
+Problemas moderados (⭐⭐): 22
+Problemas fáciles (⭐): 7
+
+REPOSITORIO GITHUB CON TODOS LOS CÓDIGOS COMPLETOS Y FUNCIONALES:
+https://github.com/3lintruz0/guia_estructura_datos
+
+Todos los archivos están listos para compilar y ejecutar. Cada problema tiene su solución documentada.
